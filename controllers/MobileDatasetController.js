@@ -54,15 +54,19 @@ if(highPrice !== undefined){
 // }
 
     const mobileDataset = await MobileDatasetTable.find(queryObject);
-
+try{
     if(mobileDataset){
-        res.send(mobileDataset);    
+        res.status(200).send(mobileDataset);    
 
     }else{
-        res.json({err:"Error"});    
+        res.status(404).json({err:"Error"});    
 
     }
+}catch(err){
+    console.log(err);
 }
+}
+    
 
 module.exports = {
     showMobileDataset
