@@ -29,13 +29,13 @@ app.get("/home",(req,res)=>{
 
 // create all tables
 
-const createAllTablesRoutes = require("../server/routes/CreateAllTablesRoutes"); 
+const createAllTablesRoutes = require("./routes/CreateAllTablesRoutes"); 
 
 app.use("/createMobileDatasetTable",createAllTablesRoutes);
 
 // fetch all mobile dataset
 
-const showMobileDataset = require("../server/routes/MobileDatasetRoutes"); 
+const showMobileDataset = require("./routes/MobileDatasetRoutes"); 
 app.use("/showMobileDataset",showMobileDataset)
 
 app.listen(port,()=>{
