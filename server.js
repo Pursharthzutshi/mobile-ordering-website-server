@@ -7,7 +7,7 @@ const port = 3001
 
 const dotenv = require('dotenv').config()
 
-mongoose.connect(`mongodb+srv://13phzi:BGbeXfcV4dp9LX4G@cluster0.m8wabkl.mongodb.net/mobileWebsiteDB?retryWrites=true&w=majority`).then((res)=>{
+mongoose.connect(`mongodb+srv://${process.env.dbUsername}:${process.env.dbPassword}@cluster0.m8wabkl.mongodb.net/mobileWebsiteDB?retryWrites=true&w=majority`).then((res)=>{
     console.log("res")
 })
 
