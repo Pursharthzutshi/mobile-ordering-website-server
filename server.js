@@ -21,6 +21,12 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
 
+//appGet
+
+app.get("/home",(req,res)=>{
+    res.send("Home");
+})
+
 // create all tables
 
 const createAllTablesRoutes = require("../server/routes/CreateAllTablesRoutes"); 
