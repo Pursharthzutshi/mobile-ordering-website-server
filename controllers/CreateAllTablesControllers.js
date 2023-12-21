@@ -1,4 +1,4 @@
-const { MobileDatasetTable } = require("../models/MobileDatasetModel");
+const  MobileDatasetTable  = require("../models/MobileDatasetModel").MobileDatasetTable;
 
 async function createMobileDatasetTable(req,res){
     await MobileDatasetTable();
