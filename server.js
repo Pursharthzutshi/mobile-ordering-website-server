@@ -12,7 +12,7 @@ mongoose.connect(`mongodb+srv://13phzi:BGbeXfcV4dp9LX4G@cluster0.m8wabkl.mongodb
 })
 
 app.use(cors({
-    origin:"http://localhost:3000",
+    origin:"https://mobile-ordering-website-client.vercel.app",
     methods:["GET","POST","PUT","DELETE"],
     credentials:true
 }))
